@@ -21,15 +21,20 @@
             background-color: grey;
             justify-content: center;
             align-items: center;
-            transition-property: background-color;
+            /* transition-property: background-color;
             transition-duration: 1s;
             transition-timing-function: ease-in-out 0s;
-            transition-delay: 2s;
+            transition-delay: 2s; */
+            transition: all 1s ease-in-out 2s;
         }
 
         #box:hover{
-            background-color: red;
+            background-color: brown;
             color: aliceblue;
+            height: 400px;
+            width: 400px;
+            border-radius: 6px;
+            font-size: 40px;
         }
     </style>
 </head>
@@ -37,7 +42,7 @@
     <h2>It a Transition babe</h2>
         <div class="container">
             <div id="box">
-                It my box
+                It a Transition babe
             </div>
     </div>
 </body>
