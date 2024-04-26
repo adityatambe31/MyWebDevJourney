@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-index</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+
+        }
+
+        #box1{
+            background-color: green;
+             /* if i have to see which box is at the top then i can use z-index
+                by default it is static so no change will be observed so we need to change it to relative in order to see the change  */
+            position: relative;
+            top: 14px;
+            z-index: -4;
+                
+        }
+        #box2{
+            background-color: red;
+            /* visibility: hidden;
+            /* this means that the element is not visible */
+            /* display: none;
+            if i want to visibility hidden meanwhile also the space taken by the element should be 0 then i use display none  */ 
+        
+            position: relative;
+            z-index: -9;
+            top: 14px;
+
+            /* z- index will only work on relative, sticky and absolute position */
+    
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- div.box#box$*4 this will create 4 boxes with different ids and is a shortcut used in html -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>
+
+<!-- whoseover z index is greater will come upfront in the order this is mostly used in social media website where in we use chatbox at the top or bottom -->
+
+
