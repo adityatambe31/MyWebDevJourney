@@ -111,15 +111,14 @@
 }
 
 #aboutSection{
-    height: 500px;
+    height: 600px;
     background-color: #A0153E;
     color: aliceblue;
 }
 #aboutSection h3{
     text-align: center;
     font-size: 30px;
-    margin: 22px;
-
+    padding: 10px;
 }
 
 #aboutSection .card{
@@ -127,11 +126,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 168px;
+    height: 268px;
     width: 32%;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    border: 2px solid white;
 
 }
 
@@ -152,4 +152,13 @@
     align-items: center;
     font-size: 15px;
 
-}   
+}
+
+@media screen and (max-width: 768px){
+    
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
